@@ -17,7 +17,7 @@ def run_flask():
 
 # --- BOT AYARLARI ---
 TOKEN = '8136294651:AAGXvud2Hc3yv45zlw4gUkSIpQz0xfhAhw8'
-CHAT_ID = '@VULCI_TERS_BOT'
+CHAT_ID = 'VULCI_TERS_BOT'
 URL = "https://api.hyperliquid.xyz/info"
 
 def main_bot():
@@ -59,4 +59,5 @@ if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     # Ana bot döngüsünü baslat
     main_bot()
+
 

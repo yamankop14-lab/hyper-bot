@@ -13,7 +13,7 @@ def run_flask(): app.run(host='0.0.0.0', port=10000)
 
 # --- AYARLAR ---
 TOKEN = '8136294651:AAGXvud2Hc3yv45zlw4gUkSIpQz0xfhAhw8'
-CHAT_ID = 'VULCI_TERS_BOT' # Sadece rakamlar!
+CHAT_ID = '8136294651' # Sadece rakamlar!
 URL = "https://api.hyperliquid.xyz/info"
 
 def main_bot():
@@ -74,4 +74,5 @@ def main_bot():
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     main_bot()
+
 

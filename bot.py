@@ -40,7 +40,7 @@ def main_bot():
                     try:
                         pnl = float(vault['pnlHistory'][-1][1])
                         addr = vault['vaultAddr']
-                        if pnl < -100 and addr not in sent_notifications:
+                        if pnl < -1 and addr not in sent_notifications:
                             name = vault.get('name', 'Bilinmeyen')
                             msg = f"🚨 *TERSTE KALAN TRADER*\n\nKasa: {name}\nPnL: {pnl:,.2f} USDT\n[Detay](https://app.hyperliquid.xyz/vaults/{addr})"
                             tg_url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
@@ -59,3 +59,4 @@ if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     # Ana bot döngüsünü baslat
     main_bot()
+
